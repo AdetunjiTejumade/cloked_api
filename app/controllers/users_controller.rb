@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     user = User.new(user_params)
     if user.save
       token = AuthenticateUser.new(user.email, user.password).call
-      response = { message: "Welcome #{user.name}, account created successfully", token: token }
+      response = { message: "Welcome #{user.name}, account created successfully", user: token }
       render json: response, status: :created
     else
       render json: { message: "Validation failed: Password can't be blank, Name can't be blank, Email can't be blank,

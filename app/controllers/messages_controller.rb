@@ -7,7 +7,7 @@ class MessagesController < ApplicationController
     user = User.find_by(name: params[:username])
     if user.present?
       user&.anon_messages&.create(message_params)
-      render json: @message, status: :created
+      render json: { message: 'Message sent' }, status: :created
     else
       render json: { error: 'User does not exist' }, status: :unprocessable_entity
     end

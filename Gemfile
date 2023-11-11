@@ -18,6 +18,7 @@ gem 'jwt'
 gem 'bcrypt'
 gem 'pry-byebug'
 gem 'pry-rails'
+gem 'rack-cors'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 # gem "jbuilder"
