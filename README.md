@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
+## How to set up
 * Ruby version
+`ruby 3.0.0`
+* Install Ruby
+https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-3.0.6-1/rubyinstaller-devkit-3.0.6-1-x64.exe
 
-* System dependencies
+* Install Rails
+  `gem install rails`
+* Install PostgreSQL
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads
 
-* Configuration
+## Clone the repo
+`git clone https://github.com/AdetunjiTejumade/cloked_api`
 
-* Database creation
+## Install dependencies
+`bundle install`
 
-* Database initialization
+## Set up database
+`rails db:setup`
 
-* How to run the test suite
+## Start the api
+`rails s`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+api should be accessable on `http://localhost:3000/`
